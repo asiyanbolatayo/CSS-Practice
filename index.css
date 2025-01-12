@@ -175,7 +175,7 @@ h1 ~ p {
   }
 
   &:hover {
-    background-color: lightblue;
+    background-color: lightpink;
   }
 }
 
