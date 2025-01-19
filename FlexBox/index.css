@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+.container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* align-content: flex-end; */
+    align-content: flex-start;
+    width: 500px;
+    height: 700px;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */  /*Justify content is for main axiz alignment */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */  
+    /* justify-content: space-evenly; */
+    /* align-items: stretch; */
+    /* align-items: flex-start; */         /*align items is use for cross axis alignment */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* align-items: baseline ; */
+}
+.container:nth-child(odd) {
+    align-self: flex-start;
+}
+.box1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bolder;
+  }
+
+  .box2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bolder;
+  }
+
+  .box3 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bolder;
+  }
+
+  .box4 {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bolder;
+  }
+
+  .box5 {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+    font-weight: bolder;
+  }
