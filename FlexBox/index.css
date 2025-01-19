@@ -3,12 +3,12 @@
   }
 .container {
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     /* align-content: flex-end; */
-    align-content: flex-start;
+    align-content: space-evenly;
     width: 500px;
     height: 700px;
-    /* flex-direction: row; */
+    flex-direction: column; 
     /* justify-content: flex-start; */  /*Justify content is for main axiz alignment */
     /* justify-content: flex-end; */
     /* justify-content: center; */
