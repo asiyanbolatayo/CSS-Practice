@@ -104,17 +104,86 @@
     border: 3px solid red;
   }
   
-  .fixed-box {
+  /* .fixed-box {
     position: fixed;
     bottom: 30px;
     left: 80px;
     width: 80px;
     height: 80px;
     background: orange;
-  }
+  } */
   
   .scroll-content-box {
     padding-left: 120px;
   }
 
-  
+  .stacking-context1 {
+    background: red; 
+    width: 100px;
+     height: 100px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+  }
+  .stacking-context2 {
+    background: blue; 
+    width: 100px;
+     height: 100px;
+     margin-top: -50px; 
+     margin-left: 50px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     color: white;
+  }
+
+  .z-index1 {
+    position: relative; 
+    z-index: 2; 
+    background: red;
+     width: 100px; 
+     height: 100px;"
+  }
+
+  .z-index2 {
+    position: relative;
+    z-index: 1;
+    background: blue; 
+    width: 100px; 
+    height: 100px; 
+    margin-top: -50px; 
+    margin-left: 50px;"
+  }
+
+  .content {
+    /* overflow: auto; */
+    overflow: hidden;
+    border: 3px solid black;
+    max-height: 100px;
+    float: left;
+    width: 100px;
+  }
+  .content1 {
+    overflow: scroll;
+    border: 3px solid black;
+    max-height: 100px;
+    float: left;
+    width: 100px;
+  }
+  .content3 {
+    overflow: visible;
+    border: 3px solid black;
+    max-height: 80px;
+    float: left;
+    width: 100px;
+  }
+  .content4 {
+    overflow: clip;
+    border: 3px solid black;
+    max-height: 80px;
+    float: left;
+    width: 100px;
+  }
+
+
+  /* Use when you want to scroll horizontally */
+  /* .img-wrapper {         
+    overflow: auto;
+  } */

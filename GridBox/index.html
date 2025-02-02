@@ -16,20 +16,63 @@
         <div class="grid-item6">Item 6</div>
       </div>
 
+      <P>
       <div class="scroll-container">
         <p class="fixed-box">fixed</p>
         <p class="scroll-content-box ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-      </div>
+      </div></P>
 
       <p>
-        <div style="background: red; width: 100px; height: 100px;">First</div>
-        <div style="background: blue; width: 100px; height: 100px; margin-top: -50px; margin-left: 40px;">Second</div>
+        <div class="stacking-context1">First</div>
+        <div class="stacking-context2">Second</div>
       </p>
      
-      <div style="position: relative; z-index: 2; background: red; width: 100px; height: 100px;"></div>
-    <div style="position: relative; z-index: 1; background: blue; width: 100px; height: 100px; margin-top: -50px; margin-left: 50px;"></div>
+      <div class="z-index1"></div>
+    <div class="z-index2" ></div>
+
+    <!-- <div id="parent1" style="position: relative; z-index: 1;">
+        Parent 1
+        <div id="child1" style="position: absolute; z-index: 999999;">Child 1</div>
+      </div>
+      <div id="parent2" style="position: relative; z-index: 2;">
+        Parent 2
+        <div id="child2" style="position: absolute; z-index: 1;">Child 2</div>
+      </div> -->
+
+      <div style="display: flex;">
+        <div style="background: red; z-index: 1;">First</div>
+        <div style="background: blue; z-index: 2; margin-left: -20px;">Second</div>
+      </div>
+      
+      <p>
+      <div class="content">
+        <strong><kbd>overflow: auto;</kbd></strong> property makes an element
+        scrollable when its content exceeds its bounds. Although the overflow content
+        is clipped at the element's padding box, it can still be scrolled into view.
+      </div></p>
+      <p>
+        <div class="content1">
+            <strong><kbd>overflow: scroll;</kbd></strong> property causes an element
+            overflow content to be scrolled into view using scroll bars.
+          </div>
+      </p>
+      <p>
+        <div class="content3">
+            <strong><kbd>overflow: visible;</kbd></strong> property is the default setting
+            for the <strong><kbd>overflow</kbd></strong> property. When overflow occurs
+            outside the element's padding box, it will be displayed.
+          </div>
+      </p>
+      <p>
+        <div class="content4">
+            <strong><kbd>overflow: visible;</kbd></strong> property is the default setting
+            for the <strong><kbd>overflow</kbd></strong> property. When overflow occurs
+            outside the element's padding box, it will be displayed.
+          </div>
+      </p>
+      
 </body>
 
 
