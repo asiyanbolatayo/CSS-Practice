@@ -1,0 +1,66 @@
+ /* Base styles */
+ body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post-list {
+    display: block;
+}
+
+.post {
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    .post {
+        width: 100%;
+    }
+}
+
+/* Tablet and larger */
+@media screen and (min-width: 768px) {
+    .post-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .post {
+        width: 60%;
+        margin-right: 4%;
+    }
+
+    .post:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+/* Desktop and larger */
+@media screen and (min-width: 1024px) {
+    .post {
+        width: 31%;
+        margin-right: 3.5%;
+    }
+
+    .post:nth-child(2n) {
+        margin-right: 3.5%;
+    }
+
+/*             .post:nth-child(3n) {
+        margin-right: 1;
+    } */
+}
