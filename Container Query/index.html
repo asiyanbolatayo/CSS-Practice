@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Query - Calender</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script> 
+</head>
+<body>
+    <split-panel direction="row">
+        <div slot="1">
+          <div class="calendar-wrap">
+            <div class="calendar">
+              <div class="hours">
+                <ol>
+                  <li>
+                    <div class="day-time">9 a.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">10 a.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">11 a.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">12 p.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">1 p.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">2 p.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">3 p.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">4 p.m.</div>
+                  </li>
+                  <li>
+                    <div class="day-time">5 p.m.</div>
+                  </li>
+                </ol>
+              </div>
+      
+              <dl class="events">
+                <div class="day-of-events" data-day="Monday">
+                  <dt>
+                    <div class="day-number">5</div>
+                    <div class="day-name">Mon</div>
+                  </dt>
+      
+                  <dd class="event" style="--row: 2; --span: 2;">
+                    <time> 9 - 11 a.m.</time>
+                    <div class="event-title">
+                      Planning
+                    </div>
+                  </dd>
+      
+                  <dd class="event" style="--row: 5; --span: 2;">
+                    <time>12 - 2 p.m.</time>
+                    <div class="event-title">
+                      Team Lunch
+                    </div>
+                  </dd>
+                </div>
+      
+                <div class="day-of-events" data-day="Tuesday">
+                  <dt>
+                    <div class="day-number">6</div>
+                    <div class="day-name">Tue</div>
+                  </dt>
+      
+                  <dd class="event" style="--row: 5; --span: 1;">
+                    <time>12 - 1 p.m.</time>
+                    <div class="event-title">
+                      Work Out
+                    </div>
+                  </dd>
+                  <dd class="event" style="--row: 7; --span: 1;">
+                    <time>2 - 3 p.m.</time>
+                    <div class="event-title">
+                      Doctor
+                    </div>
+                  </dd>
+                  <dd class="event" style="--row: 9; --span: 2;">
+                    <time>4 - 6 p.m.</time>
+                    <div class="event-title">
+                      Soccer
+                    </div>
+                  </dd>
+                </div>
+      
+                <div class="day-of-events" data-day="Wednesday">
+                  <dt>
+                    <div class="day-number">7</div>
+                    <div class="day-name">Wed</div>
+                  </dt>
+      
+                  <dd class="event" style="--row: 2; --span: 2;">
+                    <time> 9 - 11 a.m.</time>
+                    <div class="event-title">
+                      Customer Call
+                    </div>
+                  </dd>
+                  <dd class="event" style="--row: 7; --span: 4;">
+                    <time>2 - 6 p.m.</time>
+                    <div class="event-title">
+                      Team Event
+                    </div>
+                  </dd>
+                </div>
+      
+                <div class="day-of-events" data-day="Thursday">
+                  <dt>
+                    <div class="day-number">8</div>
+                    <div class="day-name">Thu</div>
+                  </dt>
+      
+                  <dd class="event" style="--row: 5; --span: 1;">
+                    <time>12 - 1 p.m.</time>
+                    <div class="event-title">
+                      Work Out
+                    </div>
+                  </dd>
+                </div>
+      
+                <div class="day-of-events" data-day="Friday">
+                  <dt>
+                    <div class="day-number">9</div>
+                    <div class="day-name">Fri</div>
+                  </dt>
+                  <dd class="event" style="--row: 2; --span: 9;">
+                    <time>9 - 6 p.m.</time>
+                    <div class="event-title">
+                      No Meetings
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+      
+          </div>
+        </div>
+        </div>
+        <div slot="2">
+          <div class="info-panel">
+            <h1>Container-Responsive Calendar Component</h1>
+            <p>Play with the bar in the middle to resize things and see that it's not media queries on the viewport changing the layout and style of the calendar, it is container queries.</p>
+          </div>
+        </div>
+      </split-panel>
+</body>
+</html>
