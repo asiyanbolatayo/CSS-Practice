@@ -15,7 +15,7 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 5px;
   }
 
 
@@ -99,19 +99,19 @@
 
   .scroll-container {
     width: 100%;
-    height: 100px;
+    height: 130px;
     overflow: scroll;
     border: 3px solid red;
   }
   
-  /* .fixed-box {
+  .scroll-container .fixed-box {
     position: fixed;
-    bottom: 30px;
-    left: 80px;
+    top: 180px;
+    left: 30px;
     width: 80px;
     height: 80px;
     background: orange;
-  } */
+  }
   
   .scroll-content-box {
     padding-left: 120px;
